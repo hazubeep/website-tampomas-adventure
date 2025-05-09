@@ -36,6 +36,12 @@ body {
 button {
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -53,11 +59,8 @@ button {
     font-size: 1rem;
     font-weight: 600;
     border-radius: 50px;
-    cursor: pointer;
     transition: var(--transition);
     text-decoration: none;
-    border: none;
-    outline: none;
 }
 
 .btn-primary {
@@ -68,7 +71,7 @@ button {
 .btn-primary:is(:hover, :focus) {
     background-color: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 115, 92, 0.15);
+    box-shadow: var(--shadow);
 }
 
 .btn-outline {
@@ -83,9 +86,6 @@ button {
     transform: translateY(-3px);
 }
 
-.btn i {
-    margin-left: 10px;
-}
 
 .pill-badge {
     display: inline-flex;
