@@ -7,8 +7,8 @@
                 <div class="container">
                     <div class="hero-grid">
                         <div class="hero-content will-animate">
-                            <h1 class="hero-title">Petualangan di Mulai - Apakah Kamu siap Untuk Bergabung?</h1>
-                            <p class="hero-description">
+                            <h1 class="section-title color-primary">Petualangan di Mulai - Apakah Kamu siap Untuk Bergabung?</h1>
+                            <p class="section-description" >
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nulla similique
                                 facilis, natus voluptate obcaecati unde explicabo totam hic quibusdam veritatis eos
                                 aspernatur maiores dignissimos.

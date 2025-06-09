@@ -41,7 +41,7 @@ class ArticleController extends Controller
         if ($request->hasFile('thumbnail')) {
             $validated['thumbnail'] = $request->file('thumbnail')->store('thumbnails', 'public');
         }
-
+        
         $validated['user_id'] = Auth::id();
 
         Article::create($validated);

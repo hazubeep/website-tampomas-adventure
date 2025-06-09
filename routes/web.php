@@ -8,6 +8,8 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'welcome'])->name("welcome");
+Route::get('/articles/{article}/show', [ArticleController::class, 'show'])->name('articles.show');
+
 Route::controller(AuthController::class)->group(function () {
     Route::get('/login', 'showLoginForm')->name('loginForm');
     Route::post('/login', 'login')->name('login');
@@ -15,9 +17,9 @@ Route::controller(AuthController::class)->group(function () {
 });
 
 Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard', action: [AuthController::class, 'dashboard'])->name('dashboard');
 
-    Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+    Route::get('admin/posts', [PostController::class, 'index'])->name('posts.index');
     Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
     Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
@@ -30,7 +32,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/articles/{article}/edit', [ArticleController::class, 'edit'])->name('articles.edit');
     Route::put('/articles/{article}/update', [ArticleController::class, 'update'])->name('articles.update');
     Route::delete('/articles/{article}/destroy', [ArticleController::class, 'destroy'])->name('articles.destroy');
-    Route::get('/articles/{article}/show', [ArticleController::class, 'show'])->name('articles.show');
 });
 
 

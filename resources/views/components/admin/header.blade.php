@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary py-3 " style="background-color: red;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 " style="background-color: red;">
     <div class="container ">
         <a class="navbar-brand" href="#">Dashboard Admin</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
