@@ -1,2 +1,9 @@
-## Project ini merupakan hasil dari lks tingkat kabupaten
-Jika project ini bermanfaat untuk teman teman jangan lupa star nya yaa 
+# Website Tampomas Adventure
+
+Selamat datang di proyek ini, yang merupakan hasil dari Lomba Kompetensi Siswa (LKS) tingkat kabupaten.
+
+Jika proyek ini bermanfaat untuk Anda, jangan lupa untuk memberikan ⭐️ pada repository ini!
+
+Terima kasih atas dukungan Anda.
+
+---
